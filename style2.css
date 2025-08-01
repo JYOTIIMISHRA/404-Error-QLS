@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  background: #121212;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,255,255,0.1);
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  flex: 1;
+  background: #0d0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.left-panel img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.2));
+}
+
+.right-panel {
+  flex: 1;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.right-panel h1 {
+  font-size: 6rem;
+  color: #b3404a;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.2));
+}
+
+.right-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.right-panel p {
+  font-size: 1.1rem;
+  color: #b0bec5;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.home-button {
+  background: #b3404a;
+  color: #0a0a0a;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 10px lch(91.12% 50.12 196.39 / 0.2));
+}
+
+.home-button:hover {
+  background: #b3404a;
+  transform: scale(1.05);
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  background: #1c1c1c;
+  color: #b3404a;
+  border-radius: 50%;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #b3404a;
+  color: #0a0a0a;
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .right-panel h1 {
+    font-size: 4rem;
+  }
+}
